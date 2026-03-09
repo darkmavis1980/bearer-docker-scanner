@@ -27,6 +27,14 @@ docker compose run bearer scan /tmp/scan/<path-to-code> --debug
 
 This will start the Bearer container and scan the code located at the path specified in your `.env` file, which is mounted to `/tmp/scan` inside the container.
 
+### Report
+
+To view the scan report, you can run it with the following tag:
+
+```bash
+docker compose run bearer scan /tmp/scan/<path-to-code> --debug --report security --output /tmp/scan/bearer-report.json
+```
+
 ## Configuration
 
 ### Docker Compose Configuration
